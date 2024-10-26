@@ -15,6 +15,9 @@ export default defineConfig([
         treeshake: false,
         sourcemap: true,
         clean: true,
-        external: ["@sanity/icons", "react-hotkeys-hook", "react", "react-dom", "next"]
+        external: ["@sanity/icons", "react-hotkeys-hook", "react", "react-dom", "next"],
+        loader: {
+            ".css": "css"
+        }
     }
 ]);

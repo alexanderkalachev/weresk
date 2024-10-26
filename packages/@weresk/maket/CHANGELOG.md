@@ -1,5 +1,11 @@
 # @weresk/maket
 
+## 0.1.9
+
+### Patch Changes
+
+- Injecting CSS styles into Grid component
+
 ## 0.1.8
 
 ### Patch Changes
