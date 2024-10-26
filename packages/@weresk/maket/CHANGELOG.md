@@ -1,5 +1,11 @@
 # @weresk/maket
 
+## 0.1.7
+
+### Patch Changes
+
+- Separating TypoInit and Grid from Maket wrapper
+
 ## 0.1.6
 
 ### Patch Changes
