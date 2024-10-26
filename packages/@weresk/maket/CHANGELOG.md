@@ -1,5 +1,11 @@
 # @weresk/maket
 
+## 0.1.6
+
+### Patch Changes
+
+- Separating client components to separate export
+
 ## 0.1.5
 
 ### Patch Changes

@@ -5,7 +5,7 @@ export default defineConfig([
         entry: {
             index: "./src/index.ts",
             tailwindcss: "./src/tailwindcss/index.js",
-            client: "./src/client/index.js"
+            client: "./src/client/index.ts"
         },
         format: ["esm", "cjs"],
         target: "es2022",
