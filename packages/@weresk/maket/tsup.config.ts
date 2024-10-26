@@ -9,8 +9,10 @@ export default defineConfig([
         format: ["esm", "cjs"],
         outDir: "dist",
         dts: true, // Generates TypeScript declaration files
-        splitting: false, // Disable code-splitting if you want single output files per entry
+        splitting: true, // Disable code-splitting if you want single output files per entry
+        treeshake: true,
         sourcemap: true,
-        clean: true
+        clean: true,
+        external: ["@sanity/icons", "react-hotkeys-hook"]
     }
 ]);

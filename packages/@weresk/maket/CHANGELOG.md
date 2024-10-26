@@ -1,5 +1,11 @@
 # @weresk/maket
 
+## 0.1.2
+
+### Patch Changes
+
+- Updating tsup config to fix the issue with external dependencies
+
 ## 0.1.1
 
 ### Patch Changes
