@@ -31,14 +31,13 @@ jobs:
               run: echo "$PNPM_HOME" >> $GITHUB_PATH
               env:
                   PNPM_HOME: ~/.pnpm-store/node_modules/.bin
+            - name: Turbo lint & build
+              run: pnpm exec pnpm lint build
             - name: Create Release Pull Request or Publish
               id: changesets
               uses: changesets/action@v1
               with:
-                  publish: |
-                      pnpm exec turbo lint
-                      pnpm exec turbo build
-                      pnpm exec changeset publish
+                  publish: npx changeset publish
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
