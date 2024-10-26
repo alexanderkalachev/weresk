@@ -1,19 +1,17 @@
 import { DefaultPropsWithChildren } from "@weresk/core";
-import TypoInit from "../TypoInit";
-import Grid from "../Grid";
+import { TypoInit, Grid } from "../../client";
 
 interface MaketProps extends Partial<DefaultPropsWithChildren> {
-    debug?: boolean;
+    grid?: boolean;
 }
 
 export default function Maket(props: MaketProps) {
-    const { lang, debug, children, ...restProps } = props;
+    const { lang, grid, children, ...restProps } = props;
     return (
         <html lang={lang} data-useragent="hhea" {...restProps}>
             {children}
             <TypoInit />
+            {grid ? <Grid /> : null}
         </html>
     );
 }
-
-Maket.Grid = Grid;

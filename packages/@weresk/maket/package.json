@@ -1,6 +1,6 @@
 {
     "name": "@weresk/maket",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "private": false,
     "exports": {
         ".": {
@@ -14,6 +14,12 @@
             "import": "./dist/tailwindcss.mjs",
             "require": "./dist/tailwindcss.js",
             "default": "./dist/tailwindcss.js"
+        },
+        "./client": {
+            "source": "./src/client/index.ts",
+            "import": "./dist/client.mjs",
+            "require": "./dist/client.js",
+            "default": "./dist/client.js"
         }
     },
     "main": "dist/index.js",
