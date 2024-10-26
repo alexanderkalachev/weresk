@@ -1,5 +1,11 @@
 # @weresk/core
 
+## 0.1.2
+
+### Patch Changes
+
+- Making Props types accept custom Locale type
+
 ## 0.1.1
 
 ### Patch Changes

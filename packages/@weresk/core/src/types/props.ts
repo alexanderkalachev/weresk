@@ -10,7 +10,7 @@ export interface DefaultProps<Locale extends string = string> extends DefaultSty
     lang: Locale;
 }
 
-export interface DefaultPropsWithChildren extends DefaultProps {
+export interface DefaultPropsWithChildren<Locale extends string = string> extends DefaultProps<Locale> {
     children?: React.ReactNode;
 }
 
@@ -27,6 +27,6 @@ export interface DefaultPageProps<Locale extends string = string> {
     };
 }
 
-export interface DefaultLayoutProps extends DefaultPageProps {
+export interface DefaultLayoutProps<Locale extends string = string> extends DefaultPageProps<Locale> {
     children?: React.ReactNode;
 }
