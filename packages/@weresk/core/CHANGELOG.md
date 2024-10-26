@@ -1,5 +1,12 @@
 # @weresk/core
 
+## 0.1.3
+
+### Patch Changes
+
+- Adding tsup.config to nmpingore
+- Setting up exports with tsup
+
 ## 0.1.2
 
 ### Patch Changes

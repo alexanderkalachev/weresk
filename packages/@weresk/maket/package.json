@@ -1,13 +1,27 @@
 {
     "name": "@weresk/maket",
-    "version": "0.0.4",
+    "version": "0.1.0",
     "private": false,
+    "exports": {
+        ".": {
+            "source": "./src/index.ts",
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.js",
+            "default": "./dist/index.js"
+        },
+        "./tailwindcss": {
+            "source": "./src/tailwindcss/index.js",
+            "import": "./dist/tailwindcss/index.mjs",
+            "require": "./dist/tailwindcss/index.js",
+            "default": "./dist/tailwindcss/index.js"
+        }
+    },
     "main": "dist/index.js",
     "module": "dist/index.mjs",
     "types": "dist/index.d.ts",
     "license": "MIT",
     "scripts": {
-        "build": "tsup src/index.ts --format cjs,esm --dts",
+        "build": "tsup",
         "lint": "tsc"
     },
     "dependencies": {

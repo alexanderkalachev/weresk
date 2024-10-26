@@ -1,5 +1,4 @@
 const plugin = require("tailwindcss/plugin");
-// const { addStyle, sortStyles } = require("../utils");
 
 const utils = plugin(
     function ({ addVariant }) {

@@ -1,6 +1,5 @@
 const plugin = require("tailwindcss/plugin");
 const { numeric, cssValue, addStyle, sortStyles, sortScreens } = require("../utils");
-const { min, max } = require("lodash");
 
 const defaultOptions = {
     unit: 4,
