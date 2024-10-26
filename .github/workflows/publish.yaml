@@ -35,11 +35,7 @@ jobs:
               id: changesets
               uses: changesets/action@v1
               with:
-                  publish: |
-                      # Run linting and building before publishing
-                      pnpm exec turbo lint && pnpm exec turbo build
-                      # Now publish the changesets
-                      npx changeset publish
+                  publish: pnpm exec turbo lint && pnpm exec turbo build && npx changeset publish
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
