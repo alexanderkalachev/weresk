@@ -1,0 +1,31 @@
+{
+    "name": "@weresk/maket",
+    "version": "0.0.1",
+    "main": "dist/index.js",
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "license": "MIT",
+    "scripts": {
+        "build": "tsup index.ts --format cjs,esm --dts",
+        "lint": "tsc"
+    },
+    "dependencies": {
+        "@sanity/icons": "2.11.4",
+        "@weresk/core": "workspace:*",
+        "react-hotkeys-hook": "^4.4.1"
+    },
+    "devDependencies": {
+        "@dev/typescript-config": "workspace:*",
+        "@sanity/types": "3.36.0",
+        "@types/node": "^17.0.12",
+        "@types/react": "^18.2.0",
+        "@types/react-dom": "^18.2.0",
+        "postcss": "^8.4.28",
+        "tailwindcss": "3.4.1"
+    },
+    "peerDependencies": {
+        "next": "14.2.5",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    }
+}
