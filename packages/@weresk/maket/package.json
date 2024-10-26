@@ -8,8 +8,7 @@
     "license": "MIT",
     "scripts": {
         "build": "tsup src/index.ts --format cjs,esm --dts",
-        "lint": "tsc",
-        "release": "pnpm lint && pnpm build && pnpm changeset publish"
+        "lint": "tsc"
     },
     "dependencies": {
         "@sanity/icons": "2.11.4",
