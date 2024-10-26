@@ -27,17 +27,11 @@ jobs:
 
             - name: Install dependencies
               run: pnpm install --frozen-lockfile
-            - name: Add node_modules/.bin to PATH
-              run: echo "$PNPM_HOME" >> $GITHUB_PATH
-              env:
-                  PNPM_HOME: ~/.pnpm-store/node_modules/.bin
-            - name: Turbo lint & build
-              run: pnpm exec pnpm lint build
             - name: Create Release Pull Request or Publish
               id: changesets
               uses: changesets/action@v1
               with:
-                  publish: npx changeset publish
+                  publish: pnpm release
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
