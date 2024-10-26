@@ -1,0 +1,134 @@
+{
+  "version": "6.0",
+  "nxVersion": "19.8.8",
+  "deps": {
+    "@dev/typescript-config": "workspace:*",
+    "@sanity/image-url": "^1.0.2",
+    "@types/node": "^17.0.12",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {},
+    "nonProjectFiles": [
+      {
+        "file": ".changeset/README.md",
+        "hash": "4888845876018830777"
+      },
+      {
+        "file": ".changeset/config.json",
+        "hash": "11453322427012842956"
+      },
+      {
+        "file": "index.ts",
+        "hash": "8610227018291660993"
+      },
+      {
+        "file": "lib/index.ts",
+        "hash": "18082312797672671542"
+      },
+      {
+        "file": "lib/sanity/getImageUrl.ts",
+        "hash": "6318828348323910744"
+      },
+      {
+        "file": "lib/sanity/index.ts",
+        "hash": "10233823303899688061"
+      },
+      {
+        "file": "lib/sanity/sanity.types.ts",
+        "hash": "1574698885718230949"
+      },
+      {
+        "file": "package.json",
+        "hash": "7376786222354296926"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "12952480885649187285"
+      },
+      {
+        "file": "types/index.ts",
+        "hash": "7168619660456084493"
+      },
+      {
+        "file": "types/props.ts",
+        "hash": "6724544049167150047"
+      },
+      {
+        "file": "utils/index.ts",
+        "hash": "6105972612646103769"
+      },
+      {
+        "file": "utils/objects/index.ts",
+        "hash": "13559161072206955330"
+      },
+      {
+        "file": "utils/objects/mapKeys.ts",
+        "hash": "10657762088156830050"
+      },
+      {
+        "file": "utils/objects/mergeDeep.ts",
+        "hash": "13294391144938546846"
+      },
+      {
+        "file": "utils/objects/objectMap.ts",
+        "hash": "3211670043282329970"
+      },
+      {
+        "file": "utils/objects/purgeEmptyStrings.ts",
+        "hash": "5203421260323892959"
+      },
+      {
+        "file": "utils/styles/colorToRgb.ts",
+        "hash": "10513087913494279921"
+      },
+      {
+        "file": "utils/styles/index.ts",
+        "hash": "16526351653663029724"
+      },
+      {
+        "file": "utils/text/caseTransform.ts",
+        "hash": "12505410050979774291"
+      },
+      {
+        "file": "utils/text/formatKeywords.ts",
+        "hash": "7075675013970326997"
+      },
+      {
+        "file": "utils/text/index.ts",
+        "hash": "12044869936178573757"
+      },
+      {
+        "file": "utils/text/longestWord.ts",
+        "hash": "11465942395803063271"
+      },
+      {
+        "file": "utils/text/neatTextBreaks.ts",
+        "hash": "18308675310873134868"
+      },
+      {
+        "file": "utils/text/numeric.ts",
+        "hash": "4547418015123110926"
+      },
+      {
+        "file": "utils/text/previewPortableText.ts",
+        "hash": "5658064929284980429"
+      },
+      {
+        "file": "utils/text/transliterate.ts",
+        "hash": "4255195836850803262"
+      },
+      {
+        "file": "utils/typed/index.ts",
+        "hash": "8237898697688464440"
+      },
+      {
+        "file": "utils/typed/isIn.ts",
+        "hash": "12814447269520462827"
+      }
+    ]
+  }
+}

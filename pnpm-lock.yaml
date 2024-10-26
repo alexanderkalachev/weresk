@@ -31,6 +31,9 @@ importers:
 
   packages/@weresk/core:
     dependencies:
+      '@sanity/image-url':
+        specifier: ^1.0.2
+        version: 1.0.2
       react:
         specifier: ^18.2.0
         version: 18.3.1
@@ -41,9 +44,6 @@ importers:
       '@dev/typescript-config':
         specifier: workspace:*
         version: link:../../../dev/typescript-config
-      '@sanity/image-url':
-        specifier: ^1.0.2
-        version: 1.0.2
       '@types/node':
         specifier: ^17.0.12
         version: 17.0.45
