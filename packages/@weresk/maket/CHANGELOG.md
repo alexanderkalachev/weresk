@@ -1,5 +1,11 @@
 # @weresk/maket
 
+## 0.1.8
+
+### Patch Changes
+
+- Types export definition
+
 ## 0.1.7
 
 ### Patch Changes

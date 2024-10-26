@@ -1,25 +1,28 @@
 {
     "name": "@weresk/maket",
-    "version": "0.1.7",
+    "version": "0.1.8",
     "private": false,
     "exports": {
         ".": {
             "source": "./src/index.ts",
             "import": "./dist/index.mjs",
             "require": "./dist/index.js",
-            "default": "./dist/index.js"
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.mjs"
         },
         "./tailwindcss": {
             "source": "./src/tailwindcss.js",
             "import": "./dist/tailwindcss.mjs",
             "require": "./dist/tailwindcss.js",
-            "default": "./dist/tailwindcss.js"
+            "types": "./dist/tailwind.d.ts",
+            "default": "./dist/tailwindcss.mjs"
         },
         "./client": {
             "source": "./src/client/index.ts",
             "import": "./dist/client.mjs",
             "require": "./dist/client.js",
-            "default": "./dist/client.js"
+            "types": "./dist/client.d.ts",
+            "default": "./dist/client.mjs"
         }
     },
     "main": "dist/index.js",
