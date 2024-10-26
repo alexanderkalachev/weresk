@@ -1,5 +1,11 @@
 # @weresk/maket
 
+## 0.1.3
+
+### Patch Changes
+
+- Turning off splitting and treeshaking in tsup config
+
 ## 0.1.2
 
 ### Patch Changes
