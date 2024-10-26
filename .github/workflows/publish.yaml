@@ -36,9 +36,9 @@ jobs:
               uses: changesets/action@v1
               with:
                   publish: |
-                      pnpm turbo lint
-                      pnpm turbo build
-                      pnpm changeset publish
+                      pnpm exec turbo lint
+                      pnpm exec turbo build
+                      pnpm exec changeset publish
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
