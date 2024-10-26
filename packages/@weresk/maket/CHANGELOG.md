@@ -1,5 +1,11 @@
 # @weresk/maket
 
+## 0.1.1
+
+### Patch Changes
+
+- Fixing the path to tailwindcss export
+
 ## 0.1.0
 
 ### Minor Changes

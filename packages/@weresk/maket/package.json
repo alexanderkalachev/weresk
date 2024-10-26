@@ -1,6 +1,6 @@
 {
     "name": "@weresk/maket",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "private": false,
     "exports": {
         ".": {
@@ -10,10 +10,10 @@
             "default": "./dist/index.js"
         },
         "./tailwindcss": {
-            "source": "./src/tailwindcss/index.js",
-            "import": "./dist/tailwindcss/index.mjs",
-            "require": "./dist/tailwindcss/index.js",
-            "default": "./dist/tailwindcss/index.js"
+            "source": "./src/tailwindcss.js",
+            "import": "./dist/tailwindcss.mjs",
+            "require": "./dist/tailwindcss.js",
+            "default": "./dist/tailwindcss.js"
         }
     },
     "main": "dist/index.js",
