@@ -10,7 +10,13 @@
         "lint": {
             "dependsOn": ["^lint"]
         },
-        "release": {},
+        "version": {
+            "dependsOn": [],
+            "outputs": []
+        },
+        "release": {
+            "dependsOn": ["^lint", "^build"]
+        },
         "dev": {
             "cache": false,
             "persistent": true,
