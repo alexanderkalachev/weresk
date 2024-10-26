@@ -1,5 +1,11 @@
 # @weresk/maket
 
+## 0.1.4
+
+### Patch Changes
+
+- Temporarily remove react-hotkeys-hook
+
 ## 0.1.3
 
 ### Patch Changes
