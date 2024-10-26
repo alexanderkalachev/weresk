@@ -9,7 +9,7 @@
     "scripts": {
         "build": "tsup index.ts --format cjs,esm --dts",
         "lint": "tsc",
-        "release": "pnpm lint && pnpm build && pnpm changeset publish && lerna publish"
+        "release": "pnpm lint && pnpm build && pnpm changeset publish"
     },
     "dependencies": {
         "@sanity/icons": "2.11.4",
