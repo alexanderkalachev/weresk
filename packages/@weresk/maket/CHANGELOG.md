@@ -1,5 +1,16 @@
 # @weresk/maket
 
+## 0.2.0
+
+### Minor Changes
+
+- Release 0.2.0
+
+### Patch Changes
+
+- Updated dependencies
+  - @weresk/core@0.2.0
+
 ## 0.1.9
 
 ### Patch Changes
