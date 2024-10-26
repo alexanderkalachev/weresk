@@ -31,6 +31,8 @@ jobs:
               run: echo "$PNPM_HOME" >> $GITHUB_PATH
               env:
                   PNPM_HOME: ~/.pnpm-store/node_modules/.bin
+            - name: Check .changeset folder
+              run: ls -la .changeset
             - name: Create Release Pull Request or Publish
               id: changesets
               uses: changesets/action@v1
