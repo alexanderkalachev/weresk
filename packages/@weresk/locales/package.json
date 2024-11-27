@@ -1,0 +1,27 @@
+{
+    "name": "@weresk/locales",
+    "version": "0.0.1",
+    "private": false,
+    "main": "dist/index.js",
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "license": "MIT",
+    "scripts": {
+        "build": "tsup",
+        "lint": "tsc"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "@dev/typescript-config": "workspace:*",
+        "@sanity/language-filter": "^4.0.2",
+        "@sanity/types": "3.36.0",
+        "@types/node": "^17.0.12",
+        "@types/react": "^18.2.0",
+        "@types/react-dom": "^18.2.0",
+        "@weresk/core": "workspace:*"
+    },
+    "peerDependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    }
+}
