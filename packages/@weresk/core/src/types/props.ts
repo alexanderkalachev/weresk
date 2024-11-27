@@ -5,12 +5,11 @@ export interface DefaultStyleProps {
     style?: CSSProperties;
 }
 
-export interface DefaultProps<Locale extends string = string> extends DefaultStyleProps {
+export interface DefaultProps extends DefaultStyleProps {
     id?: string;
-    lang: Locale;
 }
 
-export interface DefaultPropsWithChildren<Locale extends string = string> extends DefaultProps<Locale> {
+export interface DefaultPropsWithChildren extends DefaultProps {
     children?: React.ReactNode;
 }
 
@@ -20,13 +19,13 @@ export interface DefaultRenderProps {
     styles?: Record<string, CSSProperties | undefined>;
 }
 
-export interface DefaultPageProps<Locale extends string = string> {
+export interface DefaultPageProps {
     params: {
-        lang: Locale;
         slug?: string;
+        path?: string[];
     };
 }
 
-export interface DefaultLayoutProps<Locale extends string = string> extends DefaultPageProps<Locale> {
+export interface DefaultLayoutProps extends DefaultPageProps {
     children?: React.ReactNode;
 }

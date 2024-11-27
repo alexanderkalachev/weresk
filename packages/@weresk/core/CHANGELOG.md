@@ -1,5 +1,11 @@
 # @weresk/core
 
+## 0.2.1
+
+### Patch Changes
+
+- Adding schemas, types and utils to @weresk/locales
+
 ## 0.2.0
 
 ### Minor Changes
