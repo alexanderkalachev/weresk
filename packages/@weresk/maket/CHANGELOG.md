@@ -1,5 +1,11 @@
 # @weresk/maket
 
+## 0.2.2
+
+### Patch Changes
+
+- c452904: Refactoring localization tools to @weresk/locales
+
 ## 0.2.1
 
 ### Patch Changes
