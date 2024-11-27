@@ -11,6 +11,6 @@ export default defineConfig([
         splitting: false, // Disable code-splitting if you want single output files per entry
         sourcemap: true,
         clean: true,
-        external: ["react", "react-dom", "next"]
+        external: ["react", "react-dom", "next", "@sanity/icons"]
     }
 ]);

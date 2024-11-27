@@ -1,1 +1,2 @@
-export { isIn } from "./isIn";
+export * from "./getTitleByValue";
+export * from "./isIn";

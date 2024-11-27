@@ -10,6 +10,7 @@ export default defineConfig([
         dts: true, // Generates TypeScript declaration files
         splitting: false, // Disable code-splitting if you want single output files per entry
         sourcemap: true,
-        clean: true
+        clean: true,
+        external: ["react", "react-dom", "@sanity/image-url"]
     }
 ]);
