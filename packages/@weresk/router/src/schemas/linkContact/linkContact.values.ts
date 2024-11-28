@@ -4,9 +4,10 @@ export const CONTACT_TYPES = [
     "phone",
     "facebook",
     "instagram",
-    "twitter",
     "x",
-    "linkedin"
+    "linkedin",
+    "vk",
+    "whatsapp"
 ] as const;
 export type ContactType = (typeof CONTACT_TYPES)[number];
 
@@ -17,7 +18,8 @@ export const contactTypeList = [
     { title: "Website", value: "website" },
     { title: "Facebook", value: "facebook" },
     { title: "Instagram", value: "instagram" },
-    { title: "X", value: "x" },
-    { title: "Twitter", value: "twitter" },
-    { title: "Linkedin", value: "linkedin" }
+    { title: "X (Twitter)", value: "x" },
+    { title: "Linkedin", value: "linkedin" },
+    { title: "VK", value: "vk" },
+    { title: "Whatsapp", value: "whatsapp" }
 ];
