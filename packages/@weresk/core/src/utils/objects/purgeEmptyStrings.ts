@@ -1,6 +1,5 @@
 import { objectMap } from "./objectMap";
 
-export function purgeEmptyStrings(obj: object) {
-    // eslint-disable-next-line
-    return objectMap(obj, (value: any) => (value !== "" ? value : null));
+export function purgeEmptyStrings<T extends object>(obj: T): Partial<T> {
+    return objectMap(obj, (value: any) => (value !== "" ? value : undefined));
 }

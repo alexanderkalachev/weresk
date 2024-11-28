@@ -1,5 +1,12 @@
 # @weresk/core
 
+## 0.2.3
+
+### Patch Changes
+
+- Updating type definitions for utils
+- Adding documentation
+
 ## 0.2.2
 
 ### Patch Changes

@@ -1,4 +1,5 @@
-export { mergeDeep } from "./mergeDeep";
-export { mapKeys } from "./mapKeys";
-export { objectMap } from "./objectMap";
-export { purgeEmptyStrings } from "./purgeEmptyStrings";
+export * from "./isObject";
+export * from "./mergeDeep";
+export * from "./mapKeys";
+export * from "./objectMap";
+export * from "./purgeEmptyStrings";

@@ -1,6 +1,4 @@
-export function isObject(item?: any): boolean {
-    return Boolean(item) && typeof item === "object" && !Array.isArray(item);
-}
+import { isObject } from "./isObject";
 
 export function mergeDeep(target: object, ...sources: object[]): object {
     if (!sources.length) return target;
