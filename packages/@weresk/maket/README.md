@@ -1,4 +1,5 @@
 **@weresk/maket**
+Toolkit for working with grid, typography and swatches in TailwindCSS
 
 # Config Documentation
 

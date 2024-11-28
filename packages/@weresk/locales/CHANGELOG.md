@@ -1,5 +1,11 @@
 # @weresk/locales
 
+## 0.0.5
+
+### Patch Changes
+
+- Updating a documentation
+
 ## 0.0.4
 
 ### Patch Changes

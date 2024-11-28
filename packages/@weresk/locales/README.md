@@ -11,12 +11,20 @@ Toolkit for Next.js app localization
         -   **`languages: {id: string, title: string}[]`**: List of languages
     -   **Returns**: **`ReturnType<typeof defineType>[]`**
 
+## Constants
+
+-   **`ISO_LOCALES`**: Array of language codes from ISO 639
+
 ## Types
 
--   **`LocaleProps<T extends object, Locale extends string | undefined = string | undefined>`**: Adds `lang` property to a props interface
--   **`LocaleString<Locale extends string = string>`**: Localized string object
--   **`LocaleObject<T extends any, Locale extends string = string>`**: Localized any type object
--   **`LocalizationConfig<Locale extends string = string>`**: Localization config definition
+-   **`IsoLocale`**: Type literal string with language codes from ISO 639
+-   **`LocaleProps<T extends object, Locale extends string = IsoLocale>`**: Adds optional `lang` property to a props interface
+-   **`LocaleString<Locale extends string = IsoLocale> = Partial<Record<Locale, string>>`**: Localized string object
+-   **`LocaleObject<T extends any, Locale extends string = IsoLocale>`**: Localized any type object
+-   **`LocalizationConfig<Locale extends string = IsoLocale>`**: Localization config definition
+    -   **`languages: {id: Locale; title: string; abbr: string;}[]`**: List of languages
+    -   **`defaultLocale: Locale`**: ID of a default language
+    -   **`safeReplace?: boolean`**: Sets if a default locale should be used if a desired language value is missing
 
 ## Utils
 

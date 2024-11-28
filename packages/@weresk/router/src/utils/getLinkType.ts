@@ -1,13 +1,13 @@
 import { LinkType } from "../schemas";
 
-export function getLinkType(input: string): LinkType {
-    if (input.startsWith("#")) {
+export function getLinkType(url: string): LinkType {
+    if (url.startsWith("#")) {
         return "anchor";
     }
     if (
-        input.startsWith("http://") ||
-        input.startsWith("https://") ||
-        input.startsWith("mailto:" || input.startsWith("www."))
+        url.startsWith("http://") ||
+        url.startsWith("https://") ||
+        url.startsWith("mailto:" || url.startsWith("www."))
     ) {
         return "external";
     }

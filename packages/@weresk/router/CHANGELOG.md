@@ -1,5 +1,11 @@
 # @weresk/router
 
+## 0.0.3
+
+### Patch Changes
+
+- Adding documentation
+
 ## 0.0.2
 
 ### Patch Changes
