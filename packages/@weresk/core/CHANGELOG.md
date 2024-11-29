@@ -1,5 +1,11 @@
 # @weresk/core
 
+## 0.2.5
+
+### Patch Changes
+
+- Fixing purgeEmptyStrings logic
+
 ## 0.2.4
 
 ### Patch Changes
