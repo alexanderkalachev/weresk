@@ -5,7 +5,7 @@ import { RouterConfig } from "../../types";
 import { LinkWrapper } from "../LinkWrapper";
 import ContactIcon from "./ContactLink.icon";
 
-interface ContactLinkProps extends LocaleProps<DefaultProps> {
+export interface ContactLinkProps extends LocaleProps<DefaultProps> {
     link: LinkContact;
     mode: "text" | "icon";
     config: RouterConfig;

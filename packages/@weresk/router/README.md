@@ -27,6 +27,10 @@ Toolkit for working with links in Next.js app
         -   `contacts?: ContactType[]`: Optional customization of contacts types for `linkContact` schema
         -   `parentDepth?: number`: Optional customization of nesting depth limit used in `parent` mode
 
+## Contants
+
+-   **`contactTypeList`**: List of contact types
+
 ## Utils
 
 -   **`getDocumentPath(doc: ReferenceDocument | undefined, config: RouterConfig): string`**: Generates URL for a document
