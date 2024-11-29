@@ -1,5 +1,11 @@
 # @weresk/core
 
+## 0.2.6
+
+### Patch Changes
+
+- Adding DefaultPageParams type
+
 ## 0.2.5
 
 ### Patch Changes

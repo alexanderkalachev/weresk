@@ -23,7 +23,10 @@ export default function localeObjects({ objects, languages }: LocaleObjectsProps
                         type: object
                     })
                 )
-            ]
+            ],
+            options: {
+                collapsed: false
+            }
         })
     );
 }

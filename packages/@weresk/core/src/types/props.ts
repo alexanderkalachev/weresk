@@ -19,13 +19,15 @@ export interface DefaultRenderProps {
     styles?: Record<string, CSSProperties | undefined>;
 }
 
-export interface DefaultPageProps {
-    params: {
-        slug?: string;
-        path?: string[];
-    };
+export interface DefaultPageParams {
+    slug?: string;
+    path?: string[];
 }
 
-export interface DefaultLayoutProps extends DefaultPageProps {
+export interface DefaultPageProps<Params extends object = DefaultPageParams> {
+    params: Params;
+}
+
+export interface DefaultLayoutProps<Params extends object = DefaultPageParams> extends DefaultPageProps<Params> {
     children?: React.ReactNode;
 }
