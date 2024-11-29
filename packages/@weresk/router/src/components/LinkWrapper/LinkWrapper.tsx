@@ -15,7 +15,9 @@ export interface LinkWrapperProps<Reference extends SanityDocument = ReferenceDo
     config: RouterConfig;
 }
 
-export default function LinkWrapper(props: LinkWrapperProps) {
+export default function LinkWrapper<Reference extends SanityDocument = ReferenceDocument>(
+    props: LinkWrapperProps<Reference>
+) {
     const { link, reference, href, lang, config, children, ...commonProps } = props;
     let url = props.href;
     let linkType = url ? getLinkType(url) : undefined;

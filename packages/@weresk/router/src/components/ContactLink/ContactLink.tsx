@@ -11,7 +11,7 @@ export interface ContactLinkProps<Caption extends LocaleString | string = string
     config: RouterConfig;
 }
 
-export default function ContactLink(props: ContactLinkProps) {
+export default function ContactLink<Caption extends LocaleString | string = string>(props: ContactLinkProps<Caption>) {
     const { link, mode, lang, ...restProps } = props;
 
     // Caption

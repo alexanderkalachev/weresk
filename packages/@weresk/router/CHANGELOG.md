@@ -1,5 +1,11 @@
 # @weresk/router
 
+## 0.0.8
+
+### Patch Changes
+
+- Fixing types inheritance
+
 ## 0.0.7
 
 ### Patch Changes
