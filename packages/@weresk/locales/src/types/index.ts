@@ -1,5 +1,3 @@
-import { DefaultPropsWithChildren } from "@weresk/core";
-
 export const ISO_LOCALES = [
     "af",
     "am",
@@ -124,7 +122,7 @@ export const ISO_LOCALES = [
 
 export type IsoLocale = (typeof ISO_LOCALES)[number];
 
-export type LocaleProps<T extends object, Locale extends IsoLocale | undefined = undefined> = Locale extends IsoLocale
+export type LocaleProps<T extends object, Locale extends string | undefined = undefined> = Locale extends string
     ? T & { lang: Locale }
     : T & { lang?: IsoLocale };
 
