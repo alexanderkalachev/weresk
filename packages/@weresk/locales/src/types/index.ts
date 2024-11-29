@@ -122,9 +122,9 @@ export const ISO_LOCALES = [
 
 export type IsoLocale = (typeof ISO_LOCALES)[number];
 
-export type LocaleProps<T extends object, Locale extends string = IsoLocale> = T & {
-    lang?: Locale;
-};
+export type LocaleProps<T extends object, Locale extends IsoLocale | undefined = undefined> = Locale extends IsoLocale
+    ? T & { lang: Locale }
+    : T & { lang?: IsoLocale };
 
 export type LocaleString<Locale extends string = IsoLocale> = Partial<Record<Locale, string>>;
 export type LocaleObject<T extends any, Locale extends string = IsoLocale> = Partial<Record<Locale, T>>;

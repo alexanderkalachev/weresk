@@ -29,7 +29,6 @@ Common utilities and types for the rest of @weresk libraries
     -   **`mapKeys<K extends string, T>(keys: K[], fn: (arg: K) => T): Record<K, T>`**: Creates an object from an array of keys, using map function
     -   **`mergeDeep(target: object, ...sources: object[]): object`**: Deeply merges multiple objects
     -   **`objectMap(obj: object, fn: (k: string, v: any, i: number) => any): object`**: Maps an object
-    -   **`objectMap(obj: object, fn: (k: string, v: any, i: number) => any): object`**: Maps an object
     -   **`purgeEmptyStrings<T extends object>(obj: T): Partial<T>`**: Converts empty strings in the object values to `undefined`
 -   **Styles**
     -   **`colorToRGB(color: Color): string`**: Converts Sanity Color object to `R G B` string
