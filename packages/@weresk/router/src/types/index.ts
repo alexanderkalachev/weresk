@@ -6,7 +6,7 @@ export interface ReferenceDocument extends SanityDocument {
     _ref?: string;
     _key?: string;
     title?: LocaleString | string;
-    slug: Slug;
+    slug?: Slug;
     parent?: ReferenceDocument;
 }
 
