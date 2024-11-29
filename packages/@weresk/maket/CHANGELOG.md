@@ -1,5 +1,11 @@
 # @weresk/maket
 
+## 0.2.11
+
+### Patch Changes
+
+- Fixing Palette type definition
+
 ## 0.2.10
 
 ### Patch Changes

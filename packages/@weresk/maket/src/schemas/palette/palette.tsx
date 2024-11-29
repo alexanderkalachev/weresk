@@ -5,19 +5,18 @@ import { defaultFields, defaultSwatches } from "./palette.values";
 import { PaletteIcon } from "./palette.icon";
 import type { PaletteField } from "./palette.values";
 
-export interface PaletteSchemaProps extends SanityDocument {
+export interface PaletteSchemaProps {
     set?: PaletteField[];
     extend?: PaletteField[];
     swatches?: string[];
 }
 
-export type Palette = Record<string, Color> & {
-    _id: string;
-    _rev: string;
-    _type: "palette" | "reference";
-    _ref?: string;
-    name: string;
-};
+export type Palette = SanityDocument &
+    Record<string, Color> & {
+        _type: "palette" | "reference";
+        _ref?: string;
+        name: string;
+    };
 
 export default function palette(props: PaletteSchemaProps) {
     const { set = defaultFields, extend = [], swatches = defaultSwatches } = props;
