@@ -1,3 +1,5 @@
+import { DefaultPropsWithChildren } from "@weresk/core";
+
 export const ISO_LOCALES = [
     "af",
     "am",

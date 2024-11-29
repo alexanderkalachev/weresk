@@ -1,13 +1,15 @@
 import Link from "next/link";
+import { SanityDocument } from "@sanity/types";
 import { DefaultPropsWithChildren } from "@weresk/core";
 import { LocaleProps } from "@weresk/locales";
 import { LinkTyped } from "../../schemas";
 import { ReferenceDocument, RouterConfig } from "../../types";
 import { getLinkType, prepareLink, wrapReference } from "../../utils";
 
-export interface LinkWrapperProps extends LocaleProps<DefaultPropsWithChildren> {
-    link?: LinkTyped;
-    reference?: ReferenceDocument;
+export interface LinkWrapperProps<Reference extends SanityDocument = ReferenceDocument>
+    extends LocaleProps<DefaultPropsWithChildren> {
+    link?: LinkTyped<Reference>;
+    reference?: Reference;
     href?: string;
     title?: string;
     config: RouterConfig;
