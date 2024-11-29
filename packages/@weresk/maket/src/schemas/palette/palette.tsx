@@ -1,11 +1,11 @@
-import { defineType, defineField } from "@sanity/types";
+import { defineType, defineField, SanityDocument } from "@sanity/types";
 import { SunIcon } from "@sanity/icons";
 import type { Color } from "@weresk/core";
 import { defaultFields, defaultSwatches } from "./palette.values";
 import { PaletteIcon } from "./palette.icon";
 import type { PaletteField } from "./palette.values";
 
-export interface PaletteSchemaProps {
+export interface PaletteSchemaProps extends SanityDocument {
     set?: PaletteField[];
     extend?: PaletteField[];
     swatches?: string[];
