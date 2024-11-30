@@ -5,7 +5,7 @@ export default function languageFilterConfig(config: LocalizationConfig, schemas
     return {
         supportedLanguages: config.languages,
         defaultLanguages: [],
-        documentTypes: schemas,
+        documentTypes: [...schemas, "app"],
         filterField: (enclosingType, field, selectedLanguageIds) =>
             !enclosingType.name.startsWith("locale") || selectedLanguageIds.includes(field.name)
     };

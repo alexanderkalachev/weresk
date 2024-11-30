@@ -1,5 +1,12 @@
 # @weresk/locales
 
+## 0.0.12
+
+### Patch Changes
+
+- Updating LocaleProps logic
+- Adding 'app' schema by default to languageFilterConfig
+
 ## 0.0.11
 
 ### Patch Changes
