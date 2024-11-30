@@ -19,7 +19,7 @@ export type RouterMode = "parent" | "folder";
 
 export interface RouterConfig<DocumentType extends ReferenceDocument = ReferenceDocument> {
     mode: RouterMode;
-    schemas: string[];
+    schemas: Exclude<DocumentType["_type"], "reference">[];
     routes: Record<Exclude<DocumentType["_type"], "reference">, string>;
     contacts?: ContactType[];
     parentDepth?: number;

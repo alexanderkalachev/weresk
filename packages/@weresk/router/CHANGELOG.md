@@ -1,5 +1,11 @@
 # @weresk/router
 
+## 0.0.10
+
+### Patch Changes
+
+- Tweaking RouterConfig type
+
 ## 0.0.9
 
 ### Patch Changes
