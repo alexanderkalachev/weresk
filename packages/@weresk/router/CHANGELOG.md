@@ -1,5 +1,11 @@
 # @weresk/router
 
+## 0.0.9
+
+### Patch Changes
+
+- Updating LocaleProps logic
+
 ## 0.0.8
 
 ### Patch Changes

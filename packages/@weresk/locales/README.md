@@ -18,7 +18,7 @@ Toolkit for Next.js app localization
 ## Types
 
 -   **`IsoLocale`**: Type literal string with language codes from ISO 639
--   **`LocaleProps<T extends object, Locale extends string = IsoLocale>`**: Adds optional `lang` property to a props interface
+-   **`LocaleProps<T extends object, Locale extends string | undefined = undefined>`**: Adds optional `lang` property to a props interface
 -   **`LocaleString<Locale extends string = IsoLocale> = Partial<Record<Locale, string>>`**: Localized string object
 -   **`LocaleObject<T extends any, Locale extends string = IsoLocale>`**: Localized any type object
 -   **`LocalizationConfig<Locale extends string = IsoLocale>`**: Localization config definition

@@ -7,7 +7,8 @@ import { ReferenceDocument, RouterConfig } from "../../types";
 import { getLinkType, prepareLink, wrapReference } from "../../utils";
 
 export interface LinkWrapperProps<Reference extends SanityDocument = ReferenceDocument>
-    extends LocaleProps<DefaultPropsWithChildren> {
+    extends DefaultPropsWithChildren,
+        LocaleProps {
     link?: LinkTyped<Reference>;
     reference?: Reference;
     href?: string;

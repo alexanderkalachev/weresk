@@ -1,5 +1,12 @@
 # @weresk/core
 
+## 0.2.7
+
+### Patch Changes
+
+- Updating documentation
+- Updating LocaleProps logic
+
 ## 0.2.6
 
 ### Patch Changes

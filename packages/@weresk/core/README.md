@@ -9,7 +9,8 @@ Common utilities and types for the rest of @weresk libraries
     -   **`DefaultStyleProps`**: Contains `className` and `style` properties
     -   **`DefaultProps`**: Extends `DefaultStyleProps` and adds `id`
     -   **`DefaultPropsWithChildren`**: Extends `DefaultProps` and adds `children`
-    -   **`DefaultPageProps`**: Contains `params` with `slug` and `path` properties
+    -   **`DefaultPageParams`**: Contains `slug` and `path` properties
+    -   **`DefaultPageProps`**: Contains `params: DefaultPageParams`
     -   **`DefaultLayoutProps`**: Extends `DefaultPageProps` and adds `children`
 -   **Sanity**
     -   **`Span`**

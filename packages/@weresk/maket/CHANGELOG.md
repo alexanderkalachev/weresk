@@ -1,5 +1,15 @@
 # @weresk/maket
 
+## 0.2.14
+
+### Patch Changes
+
+- Updating LocaleProps logic
+- Updated dependencies
+- Updated dependencies
+  - @weresk/locales@0.0.10
+  - @weresk/core@0.2.7
+
 ## 0.2.13
 
 ### Patch Changes
