@@ -46,6 +46,7 @@ Common utilities and types for the rest of @weresk libraries
 -   **Typed**
     -   **`getTitleByValue(value?: string, items?: {value: string, title: string}[]): string`**: Finds a `title` value for a corresponding `value` in an array of objects with those keys
     -   **`isIn<FilterType extends string>(filter: FilterType[] | boolean | undefined, value: string | undefined)`**: Checks if a string is an array with typed string literal values
+    -   **`toLiteralString<LiteralType extends string>(values: readonly LiteralType[], value: string | undefined): LiteralType | undefined`**: Converts string to literal type if it is within values
 -   **Sanity**
     -   **`getImageUrlBuilder(source: SanityImageSource): ImageUrlBuilder`**: Returns a Sanity Image Url Builder object from Sanity Image Source
     -   **`getImageUrl = (source?: SanityImageSource, width?: number, height?: number): string`**: Returns an URL from Sanity Image Source
