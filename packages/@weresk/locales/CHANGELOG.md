@@ -1,5 +1,11 @@
 # @weresk/locales
 
+## 0.0.11
+
+### Patch Changes
+
+- Updating LocaleProps logic
+
 ## 0.0.10
 
 ### Patch Changes
