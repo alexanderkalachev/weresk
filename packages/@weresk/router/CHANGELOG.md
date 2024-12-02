@@ -1,5 +1,11 @@
 # @weresk/router
 
+## 0.0.13
+
+### Patch Changes
+
+- Updating email icon for ContactLink
+
 ## 0.0.12
 
 ### Patch Changes
