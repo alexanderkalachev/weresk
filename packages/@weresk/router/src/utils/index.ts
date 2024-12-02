@@ -4,4 +4,5 @@ export * from "./getTypesWithSameRoute";
 export * from "./isUniqueSlugFunction";
 export * from "./normalizeLink";
 export * from "./prepareLink";
+export * from "./toLinkCaptioned";
 export * from "./wrapReference";
