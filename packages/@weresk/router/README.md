@@ -39,7 +39,7 @@ Toolkit for working with links in Next.js app
 -   **`isUniqueSlugFunction(config: RouterConfig): (slug: string, context: SlugValidationContext) => Promise<boolean>`**: Generates isUniqueSlug function based on router config
 -   **`normalizeLink(input: string): string`**: Normalizes a string to be used as a URL
 -   **`prepareLink(input: LinkTyped, router: RouterConfig, lang?: IsoLocale): string`**: Generates an URL from a `LinkTyped` object
--   **`toLinkCaptioned<Caption extends LocaleString | string = string, Reference extends ReferenceDocument = ReferenceDocument>(doc: Reference, caption: Caption): LinkCaptioned<Caption, LinkTyped<Reference>>`**: Converts a document type and caption into `LinkCaptioned`
+-   **`toLinkCaptioned<Reference extends ReferenceDocument = ReferenceDocument>(doc: Reference): LinkCaptioned<NonNullable<Reference["title"]>, LinkTyped<Reference>>`**: Converts a document type into `LinkCaptioned`
 -   **`wrapReference(doc: ReferenceDocument): LinkTyped`**: Converts a document type into `LinkTyped`
 
 ## Components
