@@ -1,5 +1,11 @@
 # @weresk/core
 
+## 0.2.11
+
+### Patch Changes
+
+- Adding new utils
+
 ## 0.2.10
 
 ### Patch Changes

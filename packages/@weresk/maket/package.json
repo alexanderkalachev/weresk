@@ -1,6 +1,6 @@
 {
     "name": "@weresk/maket",
-    "version": "0.2.19",
+    "version": "0.2.20",
     "private": false,
     "exports": {
         ".": {
