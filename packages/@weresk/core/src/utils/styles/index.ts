@@ -1,1 +1,2 @@
-export { colorToRGB } from "./colorToRgb";
+export * from "./colorToRgb";
+export * from "./lockBodyScroll";

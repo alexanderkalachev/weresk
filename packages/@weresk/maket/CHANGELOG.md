@@ -1,5 +1,13 @@
 # @weresk/maket
 
+## 0.2.19
+
+### Patch Changes
+
+- Updated dependencies
+  - @weresk/core@0.2.10
+  - @weresk/locales@0.0.12
+
 ## 0.2.18
 
 ### Patch Changes

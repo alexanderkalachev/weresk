@@ -25,6 +25,9 @@ Common utilities and types for the rest of @weresk libraries
 
 ## Utils
 
+-   **Arrays**
+    -   **`pickRandom<T>(array?: T[]): T | undefined`**: Returns a random element from an array
+    -   **`shuffle<T>(array: T[]): T[]`**: Shuffles an array
 -   **Objects**
     -   **`isObject(item?: any): boolean`**: Checks if a variable is an object and not an array
     -   **`mapKeys<K extends string, T>(keys: K[], fn: (arg: K) => T): Record<K, T>`**: Creates an object from an array of keys, using map function
@@ -33,6 +36,7 @@ Common utilities and types for the rest of @weresk libraries
     -   **`purgeEmptyStrings<T extends object>(obj: T): Partial<T>`**: Converts empty strings in the object values to `undefined`
 -   **Styles**
     -   **`colorToRGB(color: Color): string`**: Converts Sanity Color object to `R G B` string
+    -   **`lockBodyScroll(lock = true)`**: Locks and unlocks scroll for HTML body element
 -   **Text**
     -   **`caseTransform(input: string | undefined, transform: "capitalize" | "uppercase" | "lowercase" | "title"): string`**: Transforms a string case
     -   **`capitalize(input: string | undefined): string`**: Capitalizes a string

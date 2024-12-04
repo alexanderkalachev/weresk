@@ -7,6 +7,7 @@ export interface DefaultStyleProps {
 
 export interface DefaultProps extends DefaultStyleProps {
     id?: string;
+    title?: string;
 }
 
 export interface DefaultPropsWithChildren extends DefaultProps {
