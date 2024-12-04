@@ -1,4 +1,5 @@
-import { SanityAsset, SanityImageDimensions, SanityImageObject } from "@sanity/image-url/lib/types/types";
+import type { ImageMetadata } from "@sanity/types";
+import { SanityAsset, SanityReference } from "@sanity/image-url/lib/types/types";
 
 export interface Span {
     _type: "span";
@@ -54,15 +55,13 @@ export interface Color {
 }
 
 export interface FileObject {
-    asset?: SanityAsset;
+    asset?: SanityReference & SanityAsset & { originalFilename?: string };
     url?: string;
 }
 
-export interface ImageObject extends Partial<SanityImageObject> {
-    asset?: {
-        metadata?: {
-            dimensions?: SanityImageDimensions;
-        };
+export interface ImageObject {
+    asset?: (SanityReference & SanityAsset) & {
+        metadata?: ImageMetadata;
     };
 }
 

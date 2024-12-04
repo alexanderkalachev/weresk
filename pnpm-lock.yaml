@@ -41,6 +41,9 @@ importers:
       '@sanity/image-url':
         specifier: ^1.0.2
         version: 1.0.2
+      '@sanity/types':
+        specifier: 3.65.1
+        version: 3.65.1
       '@types/node':
         specifier: ^17.0.12
         version: 17.0.45
@@ -1652,6 +1655,9 @@ packages:
 
   '@sanity/types@3.65.0':
     resolution: {integrity: sha512-UHpxt//qXWeNSauOFRzZbtSZ9wRGJ92L/DKzFZBEvAdqZkotKmgl7qgbmXwwOw4Gjm1bmf5H/14cKoB+Af0mZw==}
+
+  '@sanity/types@3.65.1':
+    resolution: {integrity: sha512-ize+s7zpk8v/RTqkhqJCq2Q+ph1ZSxypnVSKApn1nbdUZi32j2LAo3ziMciaz8re/uR42rt44wvYThnpCQZGuA==}
 
   '@sanity/ui@2.8.25':
     resolution: {integrity: sha512-DOelQQq5htbV9THZwcASdHAiA2wdPL/zuvrrurC8PPMGzMxHJqqMjdXLrd2zdckTgEjXcgn6rPEFZ/YY6v5CSQ==}
@@ -6237,6 +6243,13 @@ snapshots:
       - debug
 
   '@sanity/types@3.65.0(debug@4.3.7)':
+    dependencies:
+      '@sanity/client': 6.22.5(debug@4.3.7)
+      '@types/react': 18.3.6
+    transitivePeerDependencies:
+      - debug
+
+  '@sanity/types@3.65.1':
     dependencies:
       '@sanity/client': 6.22.5(debug@4.3.7)
       '@types/react': 18.3.6

@@ -1,5 +1,11 @@
 # @weresk/core
 
+## 0.2.9
+
+### Patch Changes
+
+- Updating ImageObject and FileObject types
+
 ## 0.2.8
 
 ### Patch Changes
