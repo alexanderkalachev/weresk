@@ -49,5 +49,5 @@ export default function LinkWrapper<Reference extends SanityDocument = Reference
             </Link>
         );
     }
-    return <span {...commonProps}>{children}</span>;
+    return <div {...commonProps}>{children}</div>;
 }

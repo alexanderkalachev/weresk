@@ -1,5 +1,11 @@
 # @weresk/router
 
+## 0.0.15
+
+### Patch Changes
+
+- Tweaking LinkWrapper
+
 ## 0.0.13
 
 ### Patch Changes
