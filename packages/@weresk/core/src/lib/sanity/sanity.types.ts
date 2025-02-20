@@ -55,11 +55,13 @@ export interface Color {
 }
 
 export interface FileObject {
+    _type: string;
     asset?: SanityReference & SanityAsset & { originalFilename?: string };
     url?: string;
 }
 
 export interface ImageObject {
+    _type: string;
     asset?: (SanityReference & SanityAsset) & {
         metadata?: ImageMetadata;
     };
