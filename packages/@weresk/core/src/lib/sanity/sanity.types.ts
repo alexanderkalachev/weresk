@@ -54,14 +54,14 @@ export interface Color {
     };
 }
 
-export interface FileObject {
-    _type: string;
+export interface FileObject<T extends string = "file"> {
+    _type: T;
     asset?: SanityReference & SanityAsset & { originalFilename?: string };
     url?: string;
 }
 
-export interface ImageObject {
-    _type: string;
+export interface ImageObject<T extends string = "image"> {
+    _type: T;
     asset?: (SanityReference & SanityAsset) & {
         metadata?: ImageMetadata;
     };
