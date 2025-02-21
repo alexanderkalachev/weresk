@@ -1,5 +1,11 @@
 # @weresk/router
 
+## 0.0.16
+
+### Patch Changes
+
+- Fix issue with ContactLink icons
+
 ## 0.0.15
 
 ### Patch Changes
