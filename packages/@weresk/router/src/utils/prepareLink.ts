@@ -1,10 +1,10 @@
-import { ISO_LOCALES, IsoLocale } from "@weresk/locales";
+import { ISO_LOCALES } from "@weresk/locales";
 import { LinkTyped } from "../schemas";
 import { RouterConfig } from "../types";
 import { normalizeLink } from "./normalizeLink";
 import { getDocumentPath } from "./getDocumentPath";
 
-export function prepareLink(input: LinkTyped, router: RouterConfig, lang?: IsoLocale): string {
+export function prepareLink(input: LinkTyped, router: RouterConfig, lang?: string): string {
     const { type, anchor, href, internal, reference, file } = input;
     // External – return href
     if ((!type || type === "external") && href) {

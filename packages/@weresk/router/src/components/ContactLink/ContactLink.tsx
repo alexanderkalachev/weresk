@@ -1,11 +1,12 @@
-import { DefaultProps, getTitleByValue } from "@weresk/core";
-import { LocaleProps, LocaleString, localize } from "@weresk/locales";
+import { getTitleByValue } from "@weresk/core";
+import { LocaleString, localize } from "@weresk/locales";
 import { contactTypeList, LinkContact } from "../../schemas";
 import { RouterConfig } from "../../types";
 import { LinkWrapper } from "../LinkWrapper";
 import ContactIcon from "./ContactLink.icon";
 
-export interface ContactLinkProps<Caption extends LocaleString | string = string> extends DefaultProps, LocaleProps {
+export interface ContactLinkProps<Caption extends LocaleString | string = string>
+    extends React.HTMLAttributes<HTMLAnchorElement | HTMLDivElement> {
     link: LinkContact<Caption>;
     mode: "text" | "icon";
     config: RouterConfig;

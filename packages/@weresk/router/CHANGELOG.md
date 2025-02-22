@@ -1,5 +1,11 @@
 # @weresk/router
 
+## 0.0.17
+
+### Patch Changes
+
+- Extending LinkWrapper and ContactLink components from native html elemnt props
+
 ## 0.0.16
 
 ### Patch Changes
