@@ -1,5 +1,11 @@
 # @weresk/router
 
+## 0.0.18
+
+### Patch Changes
+
+- Fixing the label for ContactLink
+
 ## 0.0.17
 
 ### Patch Changes

@@ -15,7 +15,7 @@ export interface ContactLinkProps<Caption extends LocaleString | string = string
 export default function ContactLink<Caption extends LocaleString | string = string>(props: ContactLinkProps<Caption>) {
     const { link, mode, lang, ...restProps } = props;
 
-    // Caption
+    // Caption & Label
     let caption = getTitleByValue(link.type, contactTypeList);
     if (link.type === "website") {
         caption = localize(link.caption, lang) || caption;
@@ -24,9 +24,10 @@ export default function ContactLink<Caption extends LocaleString | string = stri
     } else if (link.type === "phone" && link.phone) {
         caption = link.phone;
     }
+    const label = getTitleByValue(link.type, contactTypeList);
 
     return (
-        <LinkWrapper href={link.url} title={caption} {...restProps}>
+        <LinkWrapper href={link.url} title={label} {...restProps}>
             {mode === "icon" ? <ContactIcon icon={link.type} /> : <span>{caption}</span>}
         </LinkWrapper>
     );
