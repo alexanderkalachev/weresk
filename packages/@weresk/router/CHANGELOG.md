@@ -1,5 +1,11 @@
 # @weresk/router
 
+## 0.0.19
+
+### Patch Changes
+
+- Adding ContactIcon to exports
+
 ## 0.0.18
 
 ### Patch Changes
