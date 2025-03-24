@@ -1,5 +1,11 @@
 # @weresk/locales
 
+## 0.1.0
+
+### Minor Changes
+
+- Syncing packages with @weresk workspace
+
 ## 0.0.12
 
 ### Patch Changes
