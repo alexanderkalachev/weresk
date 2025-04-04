@@ -18,13 +18,14 @@ export default function LinkWrapper<Reference extends SanityDocument = Reference
   props: LinkWrapperProps<Reference>
 ) {
   const { link, reference, href, lang, config, children, ...commonProps } = props;
-  let url = props.href;
-  let linkType = url ? getLinkType(url) : undefined;
+  let linkType = href ? getLinkType(href) : undefined;
+  let url =
+    linkType === "internal"
+      ? prepareLink({ _type: "linkTyped", type: "internal", internal: href }, config, lang)
+      : href;
 
   // Determine link type and build url
-  if (url) {
-    url = prepareLink({ _type: "linkTyped", type: "internal", href: url }, config, lang);
-  } else {
+  if (!url) {
     if (reference) {
       linkType = "reference";
       url = prepareLink(wrapReference(reference), config, lang);
