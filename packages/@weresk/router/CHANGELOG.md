@@ -1,5 +1,11 @@
 # @weresk/router
 
+## 0.1.1
+
+### Patch Changes
+
+- Fixing issue with LinkWrapper with href and lang
+
 ## 0.1.0
 
 ### Minor Changes
