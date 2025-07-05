@@ -1,5 +1,11 @@
 # @weresk/maket
 
+## 0.3.2
+
+### Patch Changes
+
+- 2aa06fa: Fixing issue with colorToRgb util
+
 ## 0.3.1
 
 ### Patch Changes
