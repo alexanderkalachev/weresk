@@ -1,5 +1,11 @@
 # @weresk/core
 
+## 0.3.1
+
+### Patch Changes
+
+- Fixing issue with colorToRgb util"
+
 ## 0.3.0
 
 ### Minor Changes
