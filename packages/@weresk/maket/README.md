@@ -3,35 +3,35 @@ Toolkit for working with grid, typography and swatches in TailwindCSS
 
 # Config Documentation
 
--   [**Grid**](#grid)
-    -   [`screens`](#screens)
-    -   [`grid`](#grid-1)
-        -   [`scale`](#scale)
-        -   [`unit`](#unit)
-        -   [`columns`](#columns)
-        -   [`module`](#columns)
-        -   [`gutter`](#gutter)
-        -   [`offset`](#offset)
-        -   [`ruler`](#rulersteps)
-            -   [`steps`](#rulersteps)
-            -   [`modules`](#rulermodules)
-        -   [`color`](#color)
--   [**Typography**](#typography)
-    -   [`typography`](#typography-1)
-        -   [`fonts`](#fonts)
-            -   [Font Definition](#font-definition)
-                -   [`Font ID`](#font-id)
-                -   [`fontFamily`](#fontfamily)
-                -   [`extends`](#extends)
-                -   [`included`](#included)
-                -   [`imports`](#imports)
-                -   [`metrics`](#metrics)
-        -   [`styles`](#styles)
-            -   [Style Definition](#style-definition)
-    -   [`outline`](#outline)
--   [**Palette**](#palette)
-    -   [`swatches`](#swatches)
-    -   [`palette`](#palette-1)
+- [**Grid**](#grid)
+  - [`screens`](#screens)
+  - [`grid`](#grid-1)
+    - [`scale`](#scale)
+    - [`unit`](#unit)
+    - [`columns`](#columns)
+    - [`module`](#columns)
+    - [`gutter`](#gutter)
+    - [`offset`](#offset)
+    - [`ruler`](#rulersteps)
+      - [`steps`](#rulersteps)
+      - [`modules`](#rulermodules)
+    - [`color`](#color)
+- [**Typography**](#typography)
+  - [`typography`](#typography-1)
+    - [`fonts`](#fonts)
+      - [Font Definition](#font-definition)
+        - [`Font ID`](#font-id)
+        - [`fontFamily`](#fontfamily)
+        - [`extends`](#extends)
+        - [`included`](#included)
+        - [`imports`](#imports)
+        - [`metrics`](#metrics)
+    - [`styles`](#styles)
+      - [Style Definition](#style-definition)
+  - [`outline`](#outline)
+- [**Palette**](#palette)
+  - [`swatches`](#swatches)
+  - [`palette`](#palette-1)
 
 ## Grid
 
@@ -39,12 +39,12 @@ Toolkit for working with grid, typography and swatches in TailwindCSS
 
 Breakpoints definition using [Tailwind configuration](https://tailwindcss.com/docs/screens)
 
--   **Type**: `Record<string, '<number>px'>`
--   **Generated Variables**: `--metrics-container`
--   **Generated Classes**:
-    -   [Tailwind responsive modifiers](https://tailwindcss.com/docs/screens)
-    -   `grid-container`: Alternative to [Tailwind container](https://tailwindcss.com/docs/container)
--   **Classes Usage Examples**: `w-full sm:w-1/2 lg:w-1/4`
+- **Type**: `Record<string, '<number>px'>`
+- **Generated Variables**: `--metrics-container`
+- **Generated Classes**:
+  - [Tailwind responsive modifiers](https://tailwindcss.com/docs/screens)
+  - `grid-container`: Alternative to [Tailwind container](https://tailwindcss.com/docs/container)
+- **Classes Usage Examples**: `w-full sm:w-1/2 lg:w-1/4`
 
 **Default**:
 
@@ -67,19 +67,19 @@ Grid configuration object with following properties:
 
 Responsive scale behavior
 
--   **Type**: `boolean | {min?: Breakpoint; max?: Breakpoint }`
--   **Generated Variables**: `--metrics-scale`
--   **Behavior**: ==write later==
--   **Default**: `scale: false`
+- **Type**: `boolean | {min?: Breakpoint; max?: Breakpoint }`
+- **Generated Variables**: `--metrics-scale`
+- **Behavior**: ==write later==
+- **Default**: `scale: false`
 
 #### `unit`
 
 Responsive minimal grid unit
 
--   **Type**: `Record<'DEFAULT' | Breakpoint, number | '<number>px'>`
--   **Generated Variables**: `--metrics-unit`
--   **Generated Classes**: `unit` in [Tailwind _spacing_ classes](https://tailwindcss.com/docs/customizing-spacing)
--   **Classes Usage Examples**: `w-unit pr-unit min-h-unit`
+- **Type**: `Record<'DEFAULT' | Breakpoint, number | '<number>px'>`
+- **Generated Variables**: `--metrics-unit`
+- **Generated Classes**: `unit` in [Tailwind _spacing_ classes](https://tailwindcss.com/docs/customizing-spacing)
+- **Classes Usage Examples**: `w-unit pr-unit min-h-unit`
 
 **Default**:
 
@@ -93,8 +93,8 @@ unit: {
 
 Responsive amount of columns
 
--   **Type**: `Record<'DEFAULT' | Breakpoint, number>`
--   **Generated Variables**: `--metrics-columns`
+- **Type**: `Record<'DEFAULT' | Breakpoint, number>`
+- **Generated Variables**: `--metrics-columns`
 
 **Default**:
 
@@ -110,10 +110,10 @@ columns: {
 
 Responsive grid module
 
--   **Type**: `Record<'DEFAULT' | Breakpoint, number | '<number>px'>`
--   **Generated Variables**: `--metrics-module`
--   **Generated Classes**: `module` in [Tailwind _spacing_ classes](https://tailwindcss.com/docs/customizing-spacing)
--   **Classes Usage Examples**: `w-module pr-module min-h-module`
+- **Type**: `Record<'DEFAULT' | Breakpoint, number | '<number>px'>`
+- **Generated Variables**: `--metrics-module`
+- **Generated Classes**: `module` in [Tailwind _spacing_ classes](https://tailwindcss.com/docs/customizing-spacing)
+- **Classes Usage Examples**: `w-module pr-module min-h-module`
 
 **Default**:
 
@@ -131,10 +131,10 @@ module: {
 
 Responsive grid gutter
 
--   **Type**: `Record<'DEFAULT' | Breakpoint, number | '<number>px'>`
--   **Generated Variables**: `--metrics-gutter`
--   **Generated Classes**: `gutter` in [Tailwind _spacing_ classes](https://tailwindcss.com/docs/customizing-spacing)
--   **Classes Usage Examples**: `w-gutter gap-gutter min-h-gutter`
+- **Type**: `Record<'DEFAULT' | Breakpoint, number | '<number>px'>`
+- **Generated Variables**: `--metrics-gutter`
+- **Generated Classes**: `gutter` in [Tailwind _spacing_ classes](https://tailwindcss.com/docs/customizing-spacing)
+- **Classes Usage Examples**: `w-gutter gap-gutter min-h-gutter`
 
 **Default**:
 
@@ -152,10 +152,10 @@ gutter: {
 
 Responsive grid offset
 
--   **Type**: `Record<'DEFAULT' | Breakpoint, number | '<number>px'>`
--   **Generated Variables**: `--metrics-offset`
--   **Generated Classes**: `offset` in [Tailwind _spacing_ classes](https://tailwindcss.com/docs/customizing-spacing)
--   **Classes Usage Examples**: `w-offset mx-offset min-h-offset`
+- **Type**: `Record<'DEFAULT' | Breakpoint, number | '<number>px'>`
+- **Generated Variables**: `--metrics-offset`
+- **Generated Classes**: `offset` in [Tailwind _spacing_ classes](https://tailwindcss.com/docs/customizing-spacing)
+- **Classes Usage Examples**: `w-offset mx-offset min-h-offset`
 
 **Default**:
 
@@ -169,9 +169,9 @@ offset: {
 
 The amount of `spacing` classes based on `unit` and `scale` values
 
--   **Type**: `number`
--   **Generated Classes**: `[1, 2, 3, ...((unit * step} * scale)]` in [Tailwind _spacing_ classes](https://tailwindcss.com/docs/customizing-spacing)
--   **Classes Usage Examples**: `w-40 pr-2 min-h-80`
+- **Type**: `number`
+- **Generated Classes**: `[1, 2, 3, ...((unit * step} * scale)]` in [Tailwind _spacing_ classes](https://tailwindcss.com/docs/customizing-spacing)
+- **Classes Usage Examples**: `w-40 pr-2 min-h-80`
 
 **Default**:
 
@@ -185,9 +185,9 @@ ruler: {
 
 Array of modules amounts for `spacing` classes based on `module`, `gutter` and `scale` values
 
--   **Type**: `number[]`
--   **Generated Classes**: `m[number of modules]: m * module + (m - 1) * gutter` in [Tailwind _spacing_ classes](https://tailwindcss.com/docs/customizing-spacing)
--   **Classes Usage Examples**: `w-m4 pr-m1 min-h-m8`
+- **Type**: `number[]`
+- **Generated Classes**: `m[number of modules]: m * module + (m - 1) * gutter` in [Tailwind _spacing_ classes](https://tailwindcss.com/docs/customizing-spacing)
+- **Classes Usage Examples**: `w-m4 pr-m1 min-h-m8`
 
 **Default**:
 
@@ -201,8 +201,8 @@ ruler: {
 
 Responsive color for grid preview
 
--   **Type**: [`Record<'DEFAULT' | Breakpoint, RGBString>`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb)
--   **Generated Variables**: `--grid-color`
+- **Type**: [`Record<'DEFAULT' | Breakpoint, RGBString>`](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb)
+- **Generated Variables**: `--grid-color`
 
 **Default**:
 
@@ -222,7 +222,7 @@ Typography configuration object with following properties:
 
 Generate CSS with font imports and global variables for utility classes
 
--   **Type**:
+- **Type**:
 
 ```
 Record<FontID<string> , {
@@ -300,8 +300,8 @@ fonts: {
 
 Key of the font object, used as a primary font identifier in CSS variables and Tailwind classes
 
--   **Generated Classes**: `font-<Font ID>` in [Tailwind _font_ classes](https://tailwindcss.com/docs/font-family)
--   **Classes Usage Examples**: `font-inter`
+- **Generated Classes**: `font-<Font ID>` in [Tailwind _font_ classes](https://tailwindcss.com/docs/font-family)
+- **Classes Usage Examples**: `font-inter`
 
 ###### `fontFamily`
 
@@ -311,39 +311,39 @@ Font family name used in [CSS _font-family_ property](https://developer.mozilla.
 
 Default [Tailwind font family class](https://tailwindcss.com/docs/font-family) to be added to imported font class
 
--   **Behavior**: `extends: 'sans'` will create the following definition `font-family: <Font Family Name>,ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji` when `font-<Font Id>` class is used
+- **Behavior**: `extends: 'sans'` will create the following definition `font-family: <Font Family Name>,ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji` when `font-<Font Id>` class is used
 
 ###### `included`
 
 Includes imported font definition to the default [Tailwind font family class](https://tailwindcss.com/docs/font-family)
 
--   **Generated Classes**: `font-<Defailt Tailwind Font Family>` in [Tailwind _font_ classes](https://tailwindcss.com/docs/font-family)
--   **Behavior**: `included: 'sans'` will create the following definition `font-family: <Font Family Name>,ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji` when `font-sans` class is used
+- **Generated Classes**: `font-<Defailt Tailwind Font Family>` in [Tailwind _font_ classes](https://tailwindcss.com/docs/font-family)
+- **Behavior**: `included: 'sans'` will create the following definition `font-family: <Font Family Name>,ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji` when `font-sans` class is used
 
 ###### `imports`
 
 `@font-face` definitions to CSS. An array of objects with following properties:
 
--   **Properties**:
-    -   **`style`**: CSS `<font-style>` property
-    -   **`weight`**: CSS `<font-weight>` property
-    -   **`src`**: Array of strings with with CSS `<url>` for local and external imports
+- **Properties**:
+  - **`style`**: CSS `<font-style>` property
+  - **`weight`**: CSS `<font-weight>` property
+  - **`src`**: Array of strings with with CSS `<url>` for local and external imports
 
 ###### `metrics`
 
 Font metrics values for two major font rendering engines.
 
--   **Properties**:
-    -   Rendering engines:
-        -   **`hhea`**: Values for font rendering engine used in Chrome and Safari browsers
-        -   **`typo`**: Values for font rendering engine used in rest of the browsers
-    -   Metrics:
-        -   **`capHeight`**: Cap Height value (relative to font size)
-        -   **`xHeight`**: X Height value (relative to font size)
-        -   **`bottom`**: Distance between the baseline and the bottom edge of text container (relative to font size)
-        -   **`inset`**: Distance between the left edge of text container and the beginning of the string (relative to font size)
--   **Behavior**: Rendering engine is automatically detected by `<FontInit />` React component. Generated CSS variables used in `trim-*` utility classes.
--   **Generated CSS**:
+- **Properties**:
+  - Rendering engines:
+    - **`hhea`**: Values for font rendering engine used in Chrome and Safari browsers
+    - **`typo`**: Values for font rendering engine used in rest of the browsers
+  - Metrics:
+    - **`capHeight`**: Cap Height value (relative to font size)
+    - **`xHeight`**: X Height value (relative to font size)
+    - **`bottom`**: Distance between the baseline and the bottom edge of text container (relative to font size)
+    - **`inset`**: Distance between the left edge of text container and the beginning of the string (relative to font size)
+- **Behavior**: Rendering engine is automatically detected by `<FontInit />` React component. Generated CSS variables used in `trim-*` utility classes.
+- **Generated CSS**:
 
 ```
 html[data-useragent=hhea] {
@@ -364,7 +364,7 @@ html[data-useragent=typo] {
 
 Responsive typography classes definition
 
--   **Type**:
+- **Type**:
 
 ```
 Record<StyleID<string>, {
@@ -380,22 +380,22 @@ Record<StyleID<string>, {
 
 ##### `Style Definition`
 
--   **Properties**: `typo-<Style ID>`
-    -   **`Style ID`**: Key of the style object, used as a primary style identifier in Tailwind class
-    -   **`font`**: Font ID of a font to be used in style
-    -   **`fontSize`**: Font size value and a line height value. If only one value is provided, it would be used both for font size and for line height
-    -   **`ReactCssProperty`**: Any CSS property can be added in a form of React CSS key-value pair
-    -   **`[Breakpoint]`**: Responsive behavior could be added with key-value pair, where the key is Tailwind responsive modifier, and the value is a style definition object
--   **Generated Classes**: `typo-<Style ID>`
--   **Classes Usage Examples**: `typo-title-md`
+- **Properties**: `typo-<Style ID>`
+  - **`Style ID`**: Key of the style object, used as a primary style identifier in Tailwind class
+  - **`font`**: Font ID of a font to be used in style
+  - **`fontSize`**: Font size value and a line height value. If only one value is provided, it would be used both for font size and for line height
+  - **`ReactCssProperty`**: Any CSS property can be added in a form of React CSS key-value pair
+  - **`[Breakpoint]`**: Responsive behavior could be added with key-value pair, where the key is Tailwind responsive modifier, and the value is a style definition object
+- **Generated Classes**: `typo-<Style ID>`
+- **Classes Usage Examples**: `typo-title-md`
 
 ### `outline`
 
 Text outline classes definition
 
--   **Type**: `Record<'DEFAULT' | string, Width<number>>`
--   **Generated Classes**: `text-outline-<Width>`
--   **Classes Usage Examples**: `text-outline text-outline-2.5`
+- **Type**: `Record<'DEFAULT' | string, Width<number>>`
+- **Generated Classes**: `text-outline-<Width>`
+- **Classes Usage Examples**: `text-outline text-outline-2.5`
 
 **Default**:
 
@@ -411,10 +411,10 @@ outline: {
 
 Definition of individual colors
 
--   **Type**: `Record<SwatchID<string>, RGBString>`
--   **Generated Variables**: `--swatch-<Swatch ID>`
--   **Generated Classes**: [Tailwind color classes](https://tailwindcss.com/docs/customizing-colors)
--   **Classes Usage Examples**: `text-orange bg-black`
+- **Type**: `Record<SwatchID<string>, RGBString>`
+- **Generated Variables**: `--swatch-<Swatch ID>`
+- **Generated Classes**: [Tailwind color classes](https://tailwindcss.com/docs/customizing-colors)
+- **Classes Usage Examples**: `text-orange bg-black`
 
 **Default**:
 
@@ -431,10 +431,10 @@ swatches: {
 
 Definition of color palette
 
--   **Type**: `Record<SwatchID<string>, RGBString | TailwindThemeValue>`
--   **Generated Variables**: `--palette-<Swatch ID>`
--   **Generated Classes**: [Tailwind color classes](https://tailwindcss.com/docs/customizing-colors)
--   **Classes Usage Examples**: `text-primary bg-surface`
+- **Type**: `Record<SwatchID<string>, RGBString | TailwindThemeValue>`
+- **Generated Variables**: `--palette-<Swatch ID>`
+- **Generated Classes**: [Tailwind color classes](https://tailwindcss.com/docs/customizing-colors)
+- **Classes Usage Examples**: `text-primary bg-surface`
 
 **Default**:
 
